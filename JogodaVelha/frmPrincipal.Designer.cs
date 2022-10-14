@@ -43,6 +43,9 @@ namespace JogodaVelha
             this.btn2 = new System.Windows.Forms.Button();
             this.btn1 = new System.Windows.Forms.Button();
             this.labelVitoria = new System.Windows.Forms.Label();
+            this.btnRestart = new System.Windows.Forms.Button();
+            this.labelTurno = new System.Windows.Forms.Label();
+            this.checkMaquina = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // panel1
@@ -170,18 +173,51 @@ namespace JogodaVelha
             // labelVitoria
             // 
             this.labelVitoria.AutoSize = true;
-            this.labelVitoria.Location = new System.Drawing.Point(263, 556);
+            this.labelVitoria.Location = new System.Drawing.Point(263, 548);
             this.labelVitoria.Name = "labelVitoria";
-            this.labelVitoria.Size = new System.Drawing.Size(35, 13);
+            this.labelVitoria.Size = new System.Drawing.Size(30, 13);
             this.labelVitoria.TabIndex = 13;
-            this.labelVitoria.Text = "label1";
+            this.labelVitoria.Text = "Jogo";
             this.labelVitoria.Click += new System.EventHandler(this.labelVitoria_Click);
+            // 
+            // btnRestart
+            // 
+            this.btnRestart.Location = new System.Drawing.Point(12, 538);
+            this.btnRestart.Name = "btnRestart";
+            this.btnRestart.Size = new System.Drawing.Size(75, 23);
+            this.btnRestart.TabIndex = 14;
+            this.btnRestart.Text = "Reiniciar";
+            this.btnRestart.UseVisualStyleBackColor = true;
+            this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
+            // 
+            // labelTurno
+            // 
+            this.labelTurno.AutoSize = true;
+            this.labelTurno.Location = new System.Drawing.Point(487, 548);
+            this.labelTurno.Name = "labelTurno";
+            this.labelTurno.Size = new System.Drawing.Size(54, 13);
+            this.labelTurno.TabIndex = 15;
+            this.labelTurno.Text = "Turno = X";
+            // 
+            // checkMaquina
+            // 
+            this.checkMaquina.AutoSize = true;
+            this.checkMaquina.Location = new System.Drawing.Point(95, 542);
+            this.checkMaquina.Name = "checkMaquina";
+            this.checkMaquina.Size = new System.Drawing.Size(137, 17);
+            this.checkMaquina.TabIndex = 16;
+            this.checkMaquina.Text = "Jogar contra a maquina";
+            this.checkMaquina.UseVisualStyleBackColor = true;
+            this.checkMaquina.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(566, 578);
+            this.Controls.Add(this.checkMaquina);
+            this.Controls.Add(this.labelTurno);
+            this.Controls.Add(this.btnRestart);
             this.Controls.Add(this.labelVitoria);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
@@ -219,6 +255,9 @@ namespace JogodaVelha
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Label labelVitoria;
+        private System.Windows.Forms.Button btnRestart;
+        private System.Windows.Forms.Label labelTurno;
+        private System.Windows.Forms.CheckBox checkMaquina;
     }
 }
 
